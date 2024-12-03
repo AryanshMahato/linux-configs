@@ -1,3 +1,7 @@
+autoload -Uz compinit
+compinit
+
+EDITOR=nvim
 alias CW="cd ~/Coding/work"
 
 # Starship
@@ -51,3 +55,12 @@ eval $(thefuck --alias fk)
 eval "$(zoxide init zsh)"
 
 alias cd="z"
+
+# History
+SAVEHIST=1000  # Save most-recent 1000 lines
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
