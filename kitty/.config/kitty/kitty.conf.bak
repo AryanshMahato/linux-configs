@@ -1,14 +1,17 @@
-font_family      FiraCode Nerd Font
+font_family      FiraCode
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 background_blur  1
 background_opacity 0.8
-font_size 22.0
+font_size 20.0
 
 
 
 # BEGIN_KITTY_THEME
-# VSCode_Dark
+# Dark Pastel
 include current-theme.conf
 # END_KITTY_THEME
+#
+
+map ctrl+f launch --type=overlay --stdin-source=@screen_scrollback /usr/bin/fzf --no-sort --no-mouse --exact -i
