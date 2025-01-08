@@ -3,6 +3,9 @@ compinit
 
 EDITOR=nvim
 alias CW="cd ~/Coding/work"
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
 
 # Starship
 eval "$(starship init zsh)"
