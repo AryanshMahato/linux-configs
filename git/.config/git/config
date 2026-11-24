@@ -1,0 +1,36 @@
+[core]
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[diff]
+	colorMoved = default
+
+[delta]
+	features = catppuccin-mocha
+	dark = true
+	line-numbers = true
+	navigate = true
+	syntax-theme = Catppuccin Mocha
+
+# Backgrounds match catppuccin-mocha's DiffAdd / DiffDelete in Neovim, so
+# lazygit's diff view and the editor use the same red/green.
+[delta "catppuccin-mocha"]
+	minus-style = syntax "#552f3b"
+	minus-emph-style = syntax "#7d3f52"
+	plus-style = syntax "#2f4d3a"
+	plus-emph-style = syntax "#436e4e"
+	line-numbers-minus-style = "#f38ba8"
+	line-numbers-plus-style = "#a6e3a1"
+	line-numbers-left-style = "#45475a"
+	line-numbers-right-style = "#45475a"
+	line-numbers-zero-style = "#45475a"
+	file-style = bold "#cdd6f4"
+	file-decoration-style = "#6c7086" ul
+	hunk-header-style = file line-number syntax
+	hunk-header-decoration-style = "#6c7086" box
+	hunk-header-line-number-style = bold "#fab387"
+	commit-decoration-style = "#6c7086" box
+	whitespace-error-style = "#f38ba8" reverse
+	zero-style = syntax

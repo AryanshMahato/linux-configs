@@ -1,0 +1,5 @@
+git:
+  diffRenderers:
+    - colorArg: always
+      # delta reads its own options from the [delta] section of ~/.gitconfig
+      command: delta --dark --paging=never
